@@ -1,0 +1,4 @@
+Name: Paste file path
+Description: Swaps backslashes with forward slashes of the current item in the clipboard and pastes it
+Binding: fix_slash_addin
+Interactive: false
