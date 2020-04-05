@@ -1,4 +1,29 @@
-Name: Paste file path
-Description: Swaps backslashes with forward slashes of the current item in the clipboard and pastes it
-Binding: fix_slash_addin
+Name: Special paste (\ to /)
+Description: Swaps backslashes (\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
+Binding: paste_b_to_f
+Interactive: false
+
+Name: Special copy (/ to \)
+Description: Swaps forwardslashes (/) with backslashes (\) in the current item in the selected text and copies it to the clipboard.
+Binding: copy_f_to_b
+Interactive: false
+
+Name: Special paste (\\ to /)
+Description: Swaps double backslashes (\\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
+Binding: paste_bb_to_f
+Interactive: false
+
+Name: Special copy (/ to \\)
+Description: Swaps forwardslashes (/) with double backslashes (\\) in the current item in the selected text and copies it to the clipboard.
+Binding: copy_f_to_bb
+Interactive: false
+
+Name: Special paste (\ to \\)
+Description: Swaps double backslashes (\\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
+Binding: paste_b_to_bb
+Interactive: false
+
+Name: Special copy (\\ to \)
+Description: Swaps forwardslashes (/) with double backslashes (\\) in the current item in the selected text and copies it to the clipboard.
+Binding: copy_bb_to_b
 Interactive: false
