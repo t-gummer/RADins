@@ -29,6 +29,7 @@ You can use this to paste file paths from Windows File Explorer into RStudio and
 
 You can install the fwdSlash (and it's associated add-in) from [GitHub](https://github.com/t-gummer/fwdSlash) with:
 
+
 ``` r
 # install.packages("devtools")  #In case you have not installed it.
 devtools::install_github("t-gummer/fwdSlash")

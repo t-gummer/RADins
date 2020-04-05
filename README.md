@@ -40,13 +40,14 @@ it’s similarity to `Ctrl+V`).
     Shortcuts](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts)
 
 There is a function in the fwdSlash package that allows you to easily
-change the RStudio keyboard shortcut *programmatically*.
+change the RStudio keyboard shortcut *programmatically* as an
+alternative to clicking through menus.
 
 ## Compatability
 
-While the add-in designed with Windows in mind, this packages was also
-designed with the potential to work on other operating systems by vitue
-of the [`clipr`](https://github.com/mdlincoln/clipr) package. Its
-utility on Mac and Linux is reduced due the fact that their file paths
-use forwardslashes and by default which makes then already compatable
-with R.
+While the add-in was designed with Windows in mind, this packages also
+has the potential to work on other operating systems by vitue of the
+[`clipr`](https://github.com/mdlincoln/clipr) package. Its utility on
+Mac and Linux is reduced due the fact that their file paths use
+forwardslashes and by default which makes then already compatable with
+R.
