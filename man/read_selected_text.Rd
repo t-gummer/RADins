@@ -7,8 +7,10 @@
 read_selected_text()
 }
 \value{
-
+A character containing the active selected text in the RStudio IDE
 }
 \description{
-Current selected text
+A utility function that returns the current selected text, by virtue of accessing the \code{\link[rstudioapi:insertText]{rstudioapi}}.
+
+     This function is used in the source code for the \link[fwdSlash:copy_add-ins]{special copy add-ins} in the \code{fwdSlash} package.
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/fwdSlash.R
 \name{write_to_cursor}
 \alias{write_to_cursor}
-\title{Write to the current cursor position.}
+\title{Write to the current cursor position}
 \usage{
 write_to_cursor(text)
 }
@@ -10,8 +10,10 @@ write_to_cursor(text)
 \item{text}{A character vector, each element of which is a line of output to the current cursor position.}
 }
 \value{
-
+Returns \code{\link{NULL}} as it is the ``side-effects'' (i.e. inserting text in RStudio) that this function is useful for.
 }
 \description{
 A utility function for writing to the current cursor position, by virtue of accessing the \code{\link[rstudioapi:insertText]{rstudioapi}}.
+
+     This function is used in the source code for the \link[fwdSlash:paste_add-ins]{special paste add-ins} in the \code{fwdSlash} package.
 }
