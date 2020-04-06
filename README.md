@@ -11,7 +11,9 @@
 
 The `fwdSlash` package provides an RStudio add-in that replaces all
 backslashes (`\`) in text copied to the clipboard to forwardslashes
-(`/`).
+(`/`). It also provides a selection of other add-ins that either read or
+write the clipboard while changing some slashes within it (see
+`help("paste_add-ins")` and `help("copy_add-ins")`).
 
 You can use this to paste file paths from Windows File Explorer into
 RStudio and have them work as files straight away. Use them immediately
@@ -30,24 +32,22 @@ devtools::install_github("t-gummer/fwdSlash")
 
 ## Workflow
 
-It is recommended that you set the fwdSlash add-in as a keyboard
-shortcut to allow for easy access. `Ctrl+Shift+V` is recommended (note
-it’s similarity to `Ctrl+V`).
+It is recommended that you set the fwdSlash `Special paste (\ to /)`
+add-in as a keyboard shortcut to allow for easy access. `Ctrl+Shift+V`
+is recommended (note it’s similarity to `Ctrl+V`).
 
   - [Keyboard
     Shortcuts](https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts)
   - [Customizing Keyboard
     Shortcuts](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts)
 
-There is a function in the fwdSlash package that allows you to easily
-change the RStudio keyboard shortcut *programmatically* as an
-alternative to clicking through menus.
+<!-- There is a function in the fwdSlash package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
 
 ## Compatability
 
 While the add-in was designed with Windows in mind, this packages also
 has the potential to work on other operating systems by vitue of the
-[`clipr`](https://github.com/mdlincoln/clipr) package. Its utility on
+[`clipr`](https://github.com/mdlincoln/clipr) package. It’s utility on
 Mac and Linux is reduced due the fact that their file paths use
-forwardslashes and by default which makes then already compatable with
-R.
+forwardslashes and by default which makes copied file paths already
+compatable immediately in R.
