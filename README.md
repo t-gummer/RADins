@@ -9,20 +9,22 @@
 
 ## Overview
 
-The `fwdSlash` package provides an RStudio add-in that replaces all
-backslashes (`\`) in text copied to the clipboard to forwardslashes
-(`/`). It also provides a selection of other add-ins that either read or
-write the clipboard while changing some slashes within it (see
-`help("paste_add-ins")` and `help("copy_add-ins")`).
+The `fwdSlash` package provides an RStudio add-in that replaces all the
+backslashes (`\`) in text copied to the clipboard with forwardslashes
+(`/`).
 
-You can use this to paste file paths from Windows File Explorer into
-RStudio and have them work as files straight away. Use them immediately
-without having to do a *find and replace* (or worse, manually replace
-all the backslashes with forward slashes).
+You can use this add-in to paste file paths from Windows File Explorer
+into RStudio and have R recognise them right away. This is an
+alternative to the usual (slow) workflow of doing a *find and replace*
+(or worse, manually replacing all the backslashes with forward slashes).
+
+The package also provides a selection of other add-ins that either read
+or write the clipboard while changing some slashes within it. For more
+see `help("paste_add-ins")` and `help("copy_add-ins")`.
 
 ## Installation
 
-You can install the fwdSlash (and it’s associated add-in) from
+You can install the `fwdSlash` package from
 [GitHub](https://github.com/t-gummer/fwdSlash) with:
 
 ``` r
@@ -30,11 +32,14 @@ You can install the fwdSlash (and it’s associated add-in) from
 devtools::install_github("t-gummer/fwdSlash")
 ```
 
+Once you have done this, the add-ins will be available in RStudio for
+use in all future R sessions.
+
 ## Workflow
 
 It is recommended that you set the fwdSlash `Special paste (\ to /)`
 add-in as a keyboard shortcut to allow for easy access. `Ctrl+Shift+V`
-is recommended (note it’s similarity to `Ctrl+V`).
+is recommended for it’s similarity to `Ctrl+V`.
 
   - [Keyboard
     Shortcuts](https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts)
@@ -45,9 +50,9 @@ is recommended (note it’s similarity to `Ctrl+V`).
 
 ## Compatability
 
-While the add-in was designed with Windows in mind, this packages also
-has the potential to work on other operating systems by vitue of the
-[`clipr`](https://github.com/mdlincoln/clipr) package. It’s utility on
-Mac and Linux is reduced due the fact that their file paths use
-forwardslashes and by default which makes copied file paths already
-compatable immediately in R.
+`fwdSlash` was built for use on a Windows operating system.
+
+It also has the potential to work on Mac or Linux by vitue of the
+[`clipr`](https://www.r-pkg.org/pkg/clipr) package. It is however less
+useful on these operating systems than Windows due to the fact that
+their file paths use forwardslashes.
