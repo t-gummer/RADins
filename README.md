@@ -19,8 +19,8 @@ alternative to the usual (slow) workflow of doing a *find and replace*
 (or worse, manually replacing all the backslashes with forward slashes).
 
 The package also provides a selection of other add-ins that either read
-or write the clipboard while changing some slashes within it. For more
-see `help("paste_add-ins")` and `help("copy_add-ins")`.
+or write to the clipboard, while performing some conversions on slashes.
+For more see `help("paste_add-ins")` and `help("copy_add-ins")`.
 
 ## Installation
 

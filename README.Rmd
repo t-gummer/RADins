@@ -31,7 +31,6 @@ The package also provides a selection of other add-ins that either read or write
 
 You can install the `fwdSlash` package from [GitHub](https://github.com/t-gummer/fwdSlash) with:
 
-
 ``` r
 # install.packages("devtools")  #In case you have not installed it.
 devtools::install_github("t-gummer/fwdSlash")
