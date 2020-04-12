@@ -14,5 +14,7 @@ Imports:
     stringr,
     magrittr,
     rstudioapi,
-    clipr
+    clipr,
+    purrr,
+    dplyr
 RoxygenNote: 7.0.2

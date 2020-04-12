@@ -1,29 +1,19 @@
-Name: Special paste (\ to /)
-Description: Swaps backslashes (\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
-Binding: paste_b_to_f
+Name: Special copy (file path)
+Description: Copies current selection in RStudio to the clipboard with some adjustments to make it work as a link in your operating system.
+Binding: copy_file_path
 Interactive: false
 
-Name: Special copy (/ to \)
-Description: Swaps forwardslashes (/) with backslashes (\) in the current item in the selected text and copies it to the clipboard.
-Binding: copy_f_to_b
+Name: Special paste (file path)
+Description: Pastes the clipboard with some adjustments to make it work as a link in R.
+Binding: paste_file_path
 Interactive: false
 
-Name: Special paste (\\ to /)
-Description: Swaps double backslashes (\\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
-Binding: paste_bb_to_f
+Name: Special paste (vector code)
+Description: Pastes the clipboard with some adjustments to convert it to code for an R vector.
+Binding: paste_vector_code
 Interactive: false
 
-Name: Special copy (/ to \\)
-Description: Swaps forwardslashes (/) with double backslashes (\\) in the current item in the selected text and copies it to the clipboard.
-Binding: copy_f_to_bb
-Interactive: false
-
-Name: Special paste (\ to \\)
-Description: Swaps double backslashes (\\) with forwardslashes (/) in the current item in the clipboard and pastes it to the current cursor location.
-Binding: paste_b_to_bb
-Interactive: false
-
-Name: Special copy (\\ to \)
-Description: Swaps forwardslashes (/) with double backslashes (\\) in the current item in the selected text and copies it to the clipboard.
-Binding: copy_bb_to_b
+Name: Hard code vector
+Description: Excecutes the current selection with adjustments to convert it to the code for an R vector.
+Binding: hard_code_vector_code
 Interactive: false

@@ -20,7 +20,9 @@ alternative to the usual (slow) workflow of doing a *find and replace*
 
 The package also provides a selection of other add-ins that either read
 or write to the clipboard, while performing some conversions on slashes.
-For more see `help("paste_add-ins")` and `help("copy_add-ins")`.
+For more see `help("paste_add-ins")` and `help("copy_add-ins")`. Note
+that all the paste add-ins will not change the clipboard itsself, it
+will simply insert text to the current location.
 
 ## Installation
 
@@ -56,3 +58,10 @@ It also has the potential to work on Mac or Linux by vitue of the
 [`clipr`](https://www.r-pkg.org/pkg/clipr) package. It is however less
 useful on these operating systems than Windows due to the fact that
 their file paths use forwardslashes.
+
+## Similar packages
+
+There are a number of other packages that provide useful tools for
+accessing the keyboard. Some examples are listed below.
+
+  - [`clipr`](https://www.r-pkg.org/pkg/clipr)
