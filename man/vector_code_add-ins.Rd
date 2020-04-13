@@ -4,11 +4,17 @@
 \alias{vector_code_add-ins}
 \alias{paste_vector_code}
 \alias{hard_code_vector_code}
+\alias{copy_r_eval}
 \title{Vector code add-ins}
 \usage{
-paste_vector_code()
+paste_vector_code(text = get_clipboard())
 
-hard_code_vector_code()
+hard_code_vector_code(text = get_selected_text())
+
+copy_r_eval(text = get_selected_text())
+}
+\arguments{
+\item{text}{Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.}
 }
 \description{
 Use \code{paste_vector_code()} to paste the clipboard to the current cursor location with a conversion to the R code for \link[base:c]{creating a vector}. Note that it does \strong{not} change the clipboard.
@@ -16,6 +22,8 @@ Use \code{paste_vector_code()} to paste the clipboard to the current cursor loca
 Use \code{hard_code_vector_code()} to execute the code at the current cursor location and convert the result to the R code for \link[base:c]{creating a vector}.
 
 Both of these add-ins can be used to ``hard-code'' vectors.
+
+\code{copy_r_eval()} is meant to do the reverse of \code{paste_vector_code()} by evaluating selected R code and copying the output to the clipboard. Note that this is done without sending the evaluation to the console.
 }
 \note{
 The word ``paste'' here is not to be confused with the base R \code{\link{paste}} function, which is for concatenation.

@@ -1,3 +1,8 @@
+Name: Set default keyboard shortcuts
+Description: Sets keyboard shortcuts for other add-ins to their defaults.
+Binding: set_shortcuts_default
+Interactive: false
+
 Name: Special copy (file path)
 Description: Copies current selection in RStudio to the clipboard with some adjustments to make it work as a link in your operating system.
 Binding: copy_file_path
@@ -16,4 +21,9 @@ Interactive: false
 Name: Hard code vector
 Description: Excecutes the current selection with adjustments to convert it to the code for an R vector.
 Binding: hard_code_vector_code
+Interactive: false
+
+Name: Special copy (R evaluation)
+Description: Copies the output of evaluating selected code to the clipboard.
+Binding: copy_r_eval
 Interactive: false
