@@ -12,6 +12,10 @@
 #'
 #' Both of these add-ins can be used to ``hard-code'' vectors.
 #'
+#' \code{copy_r_eval()} is meant to do the reverse of \code{paste_vector_code()} by evaluating selected R code and copying the output to the clipboard. Note that this is done without sending the evaluation to the console.
+#'
+#' @param text Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.
+#'
 #' @note The word ``paste'' here is not to be confused with the base R \code{\link{paste}} function, which is for concatenation.
 #'
 #'     The usage here is the more general use meaning of ``paste'', as in placing the current copied item (i.e. in the clipboard) to the cursor position.
@@ -20,22 +24,32 @@ NULL
 
 #' @name vector_code_add-ins
 #' @export
-paste_vector_code <- function(){
-# Shift+Alt+V similar to paste, also v for vector
-# alternatively CTRL+H for hardcode because its much easier to use
-  get_clipboard() %>%
+paste_vector_code <- function(text = get_clipboard()){
+  # Ctrl+H
+  text %>%
+    strsplit("\t") %>% #this step deals with horizonal arrays (specifies with tabs), it will do them row by row if rectangular
+    unlist %>%
     to_vector_code() %>%
     write_to_cursor()
 }
 
 #' @name vector_code_add-ins
 #' @export
-hard_code_vector_code <- function(){
-# Made one that excecutes selected code and converts it to a vector
-# Ctrl+Alt+H for hard code (importantly not as easy as H to do accidentally)
-  get_selected_text() %>%
+hard_code_vector_code <- function(text = get_selected_text()){
+  # Ctrl+Alt+H
+  text %>%
     parse(text = .) %>%
     eval %>%
     to_vector_code() %>%
     write_to_cursor()
 }
+
+#' @name vector_code_add-ins
+#' @export
+copy_r_eval <- function(text = get_selected_text()){
+  text %>%
+    parse(text = .) %>%
+    eval %>%
+    set_clipboard()
+}
+
