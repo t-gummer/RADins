@@ -59,7 +59,7 @@ table_content <- c("Set default keyboard shortcuts","`set_shortcuts_default()`",
                    "Special paste (file path)","`paste_file_path()`","`Ctrl+Shift+V`","Paste a file path in the clipboard so that it will work as an R file path (this does _not_ change the clipboard).",
                    "Special paste (vector code)","`paste_vector_code()`","`Ctrl+H`","Pastes the current text in the clipboard as R code for a hard-coded vector using the `c()` function (this does _not_ change the clipboard).",
                    "Hard code vector","`hard_code_vector_code()`","`Ctrl+Alt+H`","Evaluate the current selected code in RStudio and replace it with a hard-coded vector.",
-                   "Special copy (R evaluation)","`copy_r_eval()`","`Ctrl+G`","Evaluate currently selected code in RStudio and copy the output to the clipboard (one line per element of vectors). This can be thought of as reversing the \"_Special paste (vector code)_\" add-in"
+                   "Special copy (R evaluation)","`copy_r_eval()`","`Ctrl+G`","Evaluate currently selected code in RStudio and copy the output to the clipboard (one line per element of vectors). This can be thought of as reversing the \"_Special paste (vector code)_\" add-in."
                    )
 table_content %>% 
   matrix(ncol = 4,byrow = TRUE,dimnames = list(NULL,table_header)) %>% 
