@@ -11,8 +11,8 @@
 
 The `fwdSlash` package provides a number of add-ins that extend the
 capabilities of RStudio. The motivation for this package is an add-in
-allows you to paste file paths into RStudio from a Windows machine. This
-will usually mean replacing backslashes (`\`) with forwardslashes
+that allows you to paste file paths into RStudio from a Windows machine.
+This will usually mean replacing backslashes (`\`) with forwardslashes
 (`/`)—hence the name `fwdSlash`—.
 
 The package also includes others add-ins that perform other special

@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-The `fwdSlash` package provides a number of add-ins that extend the capabilities of RStudio. The motivation for this package is an add-in allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forwardslashes (`/`)---hence the name `fwdSlash`---.
+The `fwdSlash` package provides a number of add-ins that extend the capabilities of RStudio. The motivation for this package is an add-in that allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forwardslashes (`/`)---hence the name `fwdSlash`---.
 
 The package also includes others add-ins that perform other special copy/pastes, as well as some add-ins for working with hard-coded vectors.
 
