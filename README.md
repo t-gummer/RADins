@@ -31,6 +31,24 @@ For more see `help("file_path_add-ins")` and
 change the clipboard itself, they will simply insert text to the current
 location leaving the clipboard untouched.
 
+## Features
+
+The `fwdSlash` package contains the following add-ins:
+
+|          Add-in Name           |   Underlying R Function   | Recommended Shortcut |                                                                                      Description                                                                                      |
+| :----------------------------: | :-----------------------: | :------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Set default keyboard shortcuts | `set_shortcuts_default()` |        *none*        |                                                   Click on this add-in in RStudio to set the shortcuts for the other add-ins below.                                                   |
+|    Special copy (file path)    |    `copy_file_path()`     |     `Ctrl+Alt+C`     |                                                    Copy a file path to the clipboard so that it will work as a Windows file path.                                                     |
+|   Special paste (file path)    |    `paste_file_path()`    |    `Ctrl+Shift+V`    |                                   Paste a file path in the clipboard so that it will work as an R file path (this does *not* change the clipboard).                                   |
+|  Special paste (vector code)   |   `paste_vector_code()`   |       `Ctrl+H`       |                      Pastes the current text in the clipboard as R code for a hard-coded vector using the `c()` function (this does *not* change the clipboard).                      |
+|        Hard code vector        | `hard_code_vector_code()` |     `Ctrl+Alt+H`     |                                               Evaluate the current selection in the clipboard and replace it with a hard-coded vector.                                                |
+|  Special copy (R evaluation)   |      `copy_r_eval()`      |       `Ctrl+G`       | Evaluate the current selection and copy the output to the clipboard (one line per element of vectors). This can be thought of as reversing the “*Special paste (vector code)*” add-in |
+
+The decisions for the “recommended shortcuts” are based on both the
+availability (they do not overwrite any of the existing default ones)
+and some attempt at logical conventions.
+<!-- Rationalise each choiceof shortcut below -->
+
 ## Installation
 
 You can install the `fwdSlash` package from
