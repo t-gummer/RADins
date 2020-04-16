@@ -20,9 +20,9 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-The `fwdSlash` package provides a number of RStudio add-ins that mainly focus on copying and pasting content into RStudio. The motivation for this package is an add-in allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forwardslashes (`/`)---hence the name `fwdSlash`---.
+The `fwdSlash` package provides a number of add-ins that extend the capabilities of RStudio. The motivation for this package is an add-in allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forwardslashes (`/`)---hence the name `fwdSlash`---.
 
-The package also includes others add-ins that mainly perform other special copy/paste tasks.
+The package also includes others add-ins that perform other special copy/pastes, as well as some add-ins for working with hard-coded vectors.
 
 <!-- * An add-in to copy a file path in R and convert it into a system (Windows) file path. -->
 <!-- * An add-in to paste the hard-code for a vector based on the current selection. -->
@@ -31,7 +31,20 @@ The package also includes others add-ins that mainly perform other special copy/
 
 For more see `help("file_path_add-ins")` and `help("vector_code_add-ins")`. Note that the paste add-ins will not change the clipboard itself, they will simply insert text to the current location leaving the clipboard untouched.
 
-## Features
+
+## Installation
+
+You can install the `fwdSlash` package from [GitHub](https://github.com/t-gummer/fwdSlash) with:
+
+``` r
+# install.packages("devtools")  #In case you have not installed it.
+devtools::install_github("t-gummer/fwdSlash")
+```
+
+Once you have done this, the add-ins will be available in RStudio for use in all future R sessions.
+
+
+## Included Add-ins
 
 
 The `fwdSlash` package contains the following add-ins:
@@ -54,20 +67,8 @@ table_content %>%
 
 ```
 
-The decisions for the "recommended shortcuts" are based on both the availability (they do not overwrite any of the existing default ones) and some attempt at logical conventions.
+The decisions for the "recommended shortcuts" are based on both availability (they do not overwrite any of the existing default ones) and some attempt at logical conventions.
 <!-- Rationalise each choiceof shortcut below -->
-
-## Installation
-
-You can install the `fwdSlash` package from [GitHub](https://github.com/t-gummer/fwdSlash) with:
-
-``` r
-# install.packages("devtools")  #In case you have not installed it.
-devtools::install_github("t-gummer/fwdSlash")
-```
-
-Once you have done this, the add-ins will be available in RStudio for use in all future R sessions.
-
 
 ## Workflow
 
