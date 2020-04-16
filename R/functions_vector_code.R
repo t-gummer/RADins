@@ -41,7 +41,6 @@
 #'  # character example
 #'  clipboard_to_R_vector(c("Apple","Orange","Banana")) }
 #'
-#' @export
 to_vector_code <- function(x = clipr::read_clip()){
   if(clipboard_is_numeric(x)){
     x %>%

@@ -23,7 +23,6 @@
 NULL
 
 #' @name vector_code_add-ins
-#' @export
 paste_vector_code <- function(text = get_clipboard()){
   # Ctrl+H
   text %>%
@@ -34,7 +33,6 @@ paste_vector_code <- function(text = get_clipboard()){
 }
 
 #' @name vector_code_add-ins
-#' @export
 hard_code_vector_code <- function(text = get_selected_text()){
   # Ctrl+Alt+H
   text %>%
@@ -45,7 +43,6 @@ hard_code_vector_code <- function(text = get_selected_text()){
 }
 
 #' @name vector_code_add-ins
-#' @export
 copy_r_eval <- function(text = get_selected_text()){
   text %>%
     parse(text = .) %>%

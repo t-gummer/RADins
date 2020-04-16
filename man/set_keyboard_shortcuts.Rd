@@ -16,5 +16,5 @@ set_shortcuts_default()
 \item{shortcuts}{Characer vector of keyboard shortcuts for addins. Need to be in the right form (e.g. \code{"Ctrl+Shift+V"}).}
 }
 \description{
-Manipulated the JSON file to make the suggested keyboard shortcuts. Need to restart RStudio for them to take effect.
+Manipulated the JSON file to make the suggested keyboard shortcuts. Need to close and re-open RStudio (or start a new session) for them to take effect.
 }

@@ -1,11 +1,11 @@
 Package: fwdSlash
 Type: Package
-Title: Add-in for Replacing Backslashes in the Clipboard with Forwardslashes
-Version: 0.1.0
+Title: Useful RStudio Add-ins for Pasting File Paths and More
+Version: 0.1.1
 Author: Tim Gummer
 Maintainer: Tim Gummer <timothy.gummer@gmail.com>
-Description: This is useful for converting Windows file paths into something useable in R. 
-    It is recommended that this shortcut it assigned to Ctrl+Shift+V.
+Description: This package began as a solitary add-in that converted Windows file paths into add-in for which this package gets its name is useful for converting Windows file paths into something useable in R by replacing back slashes with forward slashes.
+    It is recommended that this add-in is assigned to the shortcut, Ctrl+Shift+V. The other shortcuts in this package perform other tasks mainly relating to copying and pasting.
 License: 
 Encoding: UTF-8
 LazyData: true
@@ -16,5 +16,6 @@ Imports:
     rstudioapi,
     clipr,
     purrr,
-    dplyr
+    dplyr,
+    jsonlite
 RoxygenNote: 7.0.2

@@ -1,5 +1,5 @@
 # NOTE: ----
-# Add-ins to copy and paste file paths
+# Add-ins to copy and paste file paths.
 
 # CODE: ----
 
@@ -21,7 +21,6 @@ NULL
 
 #' @name file_path_add-ins
 #' @importFrom magrittr `%<>%`
-#' @export
 copy_file_path <- function(text = get_selected_text()){
   # Ctrl+Alt+C
   quotes <- c("^\"","\"$") %>%
@@ -39,7 +38,6 @@ copy_file_path <- function(text = get_selected_text()){
 }
 
 #' @name file_path_add-ins
-#' @export
 paste_file_path <- function(text = get_clipboard()){
 # Ctrl+Shift+V
   text %>%
