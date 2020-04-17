@@ -18,7 +18,4 @@ Imports:
     purrr,
     dplyr,
     jsonlite
-Suggests:
-    testthat,
-    spelling
 RoxygenNote: 7.0.2
