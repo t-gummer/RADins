@@ -9,7 +9,7 @@
 #'
 #' It will also try to convert relative paths to absolute paths if possible.
 #'
-#' @param path A file path in a form appropriate for R in \link{R_to_sys_path()} and in a form appropriate for the operating system in \link{sys_path_to_R()}.
+#' @param path A file path in a form appropriate for R in \code{R_to_sys_path()} and in a form appropriate for the operating system in \code{sys_path_to_R()}.
 #'
 #' @name convert_file_path
 #'
@@ -33,3 +33,5 @@ sys_path_to_R <- function(path){
   path %>%
     stringr::str_replace_all(pattern = "\\\\", replace = "/")
 }
+
+

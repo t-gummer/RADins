@@ -14,9 +14,9 @@ write_to_cursor(text)
 \item{text}{A character vector, each element of which is a line of text to be written to the current cursor position.}
 }
 \value{
-The \link{read_selected_text()} function returns a character containing the active selected text in the RStudio IDE.
+The \code{read_selected_text()} function returns a character containing the active selected text in the RStudio IDE.
 
-    \link{write_cursor} returns \code{\link{NULL}} as it is the ``side-effects'' (i.e. inserting text in RStudio) that this function is useful for.
+    \code{write_to_cursor} returns \code{\link{NULL}} as it is the ``side-effects'' (i.e. inserting text in RStudio) that this function is useful for.
 }
 \description{
 Utility functions for reading the current selected text and writing to the current cursor position respectively, by virtue of the \code{\link[rstudioapi:insertText]{rstudioapi}}.

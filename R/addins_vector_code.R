@@ -35,8 +35,7 @@ paste_vector_code <- function(text = get_clipboard()){
 #' @name vector_code_add-ins
 hard_code_vector_code <- function(text = get_selected_text()){
   # Ctrl+Alt+H
-  text %>%
-    parse(text = .) %>%
+  parse(text = text) %>%
     eval %>%
     to_vector_code() %>%
     write_to_cursor()
@@ -44,8 +43,7 @@ hard_code_vector_code <- function(text = get_selected_text()){
 
 #' @name vector_code_add-ins
 copy_r_eval <- function(text = get_selected_text()){
-  text %>%
-    parse(text = .) %>%
+  parse(text = text) %>%
     eval %>%
     set_clipboard()
 }

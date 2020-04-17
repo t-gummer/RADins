@@ -11,7 +11,7 @@ R_to_sys_path(path)
 sys_path_to_R(path)
 }
 \arguments{
-\item{path}{A file path in a form appropriate for R in \link{R_to_sys_path()} and in a form appropriate for the operating system in \link{sys_path_to_R()}.}
+\item{path}{A file path in a form appropriate for R in \code{R_to_sys_path()} and in a form appropriate for the operating system in \code{sys_path_to_R()}.}
 }
 \description{
 Use these functions to convert between R file paths and system file paths. These function make the most sense on a Windows machine since R uses the same file paths as Unix-based systems (i.e. Mac and Linux).

@@ -97,3 +97,4 @@ accessing the keyboard. Some examples are listed below.
 
   - [`clipr`](https://www.r-pkg.org/pkg/clipr)
   - [`imageclipr`](https://github.com/Timag/imageclipr)
+  - [`datapasta`](https://github.com/MilesMcBain/datapasta)

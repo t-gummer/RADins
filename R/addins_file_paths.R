@@ -3,6 +3,10 @@
 
 # CODE: ----
 
+# Get rid of note on package build when "." used (mistaken for a global variable)
+if(getRversion() >= "2.15.1")  utils::globalVariables(c("."))
+
+
 #' Special paste slash add-ins
 #'
 #' @description Use these add-ins to copy/paste the clipboard to the current cursor location with some adjustments to change file paths.
@@ -26,9 +30,9 @@ copy_file_path <- function(text = get_selected_text()){
   quotes <- c("^\"","\"$") %>%
     purrr::map_chr(~text %>% stringr::str_detect(.x) %>% dplyr::if_else("\"",""))
   text %<>%
-    str_remove_all("\"") %>%
-    str_squish()
-  if(str_detect(text,"\\s")){
+    stringr::str_remove_all("\"") %>%
+    stringr::str_squish()
+  if(stringr::str_detect(text,"\\s")){
     quotes <- c("\"","\"")
   }
   text %>%

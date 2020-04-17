@@ -94,3 +94,4 @@ There are a number of other packages that provide useful tools for accessing the
 
 * [`clipr`](https://www.r-pkg.org/pkg/clipr)
 * [`imageclipr`](https://github.com/Timag/imageclipr)
+* [`datapasta`](https://github.com/MilesMcBain/datapasta)

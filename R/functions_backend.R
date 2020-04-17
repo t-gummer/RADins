@@ -66,9 +66,9 @@ set_clipboard <- function(text){
 #'
 #' @param text A character vector, each element of which is a line of text to be written to the current cursor position.
 #'
-#' @return The \link{read_selected_text()} function returns a character containing the active selected text in the RStudio IDE.
+#' @return The \code{read_selected_text()} function returns a character containing the active selected text in the RStudio IDE.
 #'
-#'     \link{write_cursor} returns \code{\link{NULL}} as it is the ``side-effects'' (i.e. inserting text in RStudio) that this function is useful for.
+#'     \code{write_to_cursor} returns \code{\link{NULL}} as it is the ``side-effects'' (i.e. inserting text in RStudio) that this function is useful for.
 #'
 #' @name Rstudio_position_utilities
 NULL
