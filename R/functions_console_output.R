@@ -5,7 +5,7 @@
 #'
 get_call_history <- function(){
   f1 <- tempfile()
-  try(savehistory(f1), silent = TRUE)
+  try(utils::savehistory(f1), silent = TRUE)
   try(rawhist <- readLines(f1), silent = TRUE)
   unlink(f1)
   if(exists('rawhist'))return(rawhist) else return(NULL)
@@ -26,7 +26,7 @@ get_call_history <- function(){
       cmds <- expression()
       n.lines <- max(abs(n+1))
       while( length(cmds) < max(abs(n+1)) ) {
-        lines <- tail( rawhist, n=n.lines )
+        lines <- utils::tail( rawhist, n=n.lines )
         try( cmds <- parse( text=lines ), silent=TRUE )
         n.lines <- n.lines + 1
         if( n.lines > length(rawhist) ) break
@@ -55,3 +55,4 @@ console_output_method <- function(obj){
   }
   return(out)
 }
+

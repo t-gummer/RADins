@@ -28,6 +28,11 @@ Description: Copies the output of evaluating selected code to the clipboard.
 Binding: copy_r_eval
 Interactive: false
 
+Name: View output
+Description: View the output of selected code (either code to create an object or the name of an object).
+Binding: View_obj
+Interactive: false
+
 Name: Special copy (console output)
 Description: Copies the latest output to the console in a format based on object class to the cliboard.
 Binding: copy_console_output
@@ -48,7 +53,3 @@ Description: Pastes the parsed code for the latest R call to the current cursor 
 Binding: paste_last_call
 Interactive: false
 
-Name: View output
-Description: View the output of selected code (either code to create an object or the name of an object).
-Binding: View_obj
-Interactive: false

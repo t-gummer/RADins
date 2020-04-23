@@ -14,8 +14,11 @@
 #' @name set_keyboard_shortcuts
 #'
 #' @examples \dontrun{
-#' #This is an example of changing shortcut thats helpful as it removed the pasteLastYank
-#' # as a shortcut that overwite Ctrl+Y for redo. This will fix frustrating default behaviour of RStudio
+#' #This is an example of changing shortcut thats helpful as it
+#' # removes pasteLastYank as a shortcut that overwites
+#' # Ctrl+Y for redo. This will fix frustrating default behaviour
+#' # of RStudio.
+#'
 #' set_shortcuts("pasteLastYank","Ctrl+Shift+Y","rstudio_bindings")
 #' }
 #'
@@ -54,17 +57,30 @@ set_shortcuts_default <- function(){
     "fwdSlash::paste_file_path",
     "fwdSlash::paste_vector_code",
     "fwdSlash::hard_code_vector_code",
-    "fwdSlash::copy_r_eval"
+    "fwdSlash::copy_r_eval",
+    "fwdSlash::View_obj",
+    "fwdSlash::copy_console_output",
+    "fwdSlash::paste_console_output",
+    "fwdSlash::copy_last_call",
+    "fwdSlash::paste_last_call"
+
     )
   shortcuts <- c(
     "Ctrl+Alt+C",
     "Ctrl+Shift+V",
     "Ctrl+H",
     "Ctrl+Alt+H",
-    "Ctrl+G" #available and next to H so it makes sense given its the reverse of Ctrl+H
+    "Ctrl+G", #available and next to H so it makes sense given its the reverse of Ctrl+H
+    "Shift+Alt+V",
+    "Ctrl+Alt+2",
+    "Ctrl+Alt+1",
+    "Shift+Alt+2",
+    "Shift+Alt+1"
     )
   set_shortcuts(addins,shortcuts,"addins")
   rstudioapi::showDialog(title = "Shortcut change complete","RStudio shortcuts for <em>fwdSlash</em> add-ins were changed to their default values.<p><strong>Close and re-open R Studio for this to take effect.</strong></p>")
 }
+
+
 
 

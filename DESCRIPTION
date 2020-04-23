@@ -10,6 +10,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/t-gummer/fwdSlash
+Depends: 
+    R (>= 2.10)
 Imports:
     stringr,
     magrittr,
@@ -17,5 +19,6 @@ Imports:
     clipr,
     purrr,
     dplyr,
-    jsonlite
+    jsonlite,
+    utils
 RoxygenNote: 7.0.2

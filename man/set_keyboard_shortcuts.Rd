@@ -22,8 +22,11 @@ Manipulated the JSON file to make the suggested keyboard shortcuts. Need to clos
 }
 \examples{
 \dontrun{
-#This is an example of changing shortcut thats helpful as it removed the pasteLastYank
-# as a shortcut that overwite Ctrl+Y for redo. This will fix frustrating default behaviour of RStudio
+#This is an example of changing shortcut thats helpful as it
+# removes pasteLastYank as a shortcut that overwites
+# Ctrl+Y for redo. This will fix frustrating default behaviour
+# of RStudio.
+
 set_shortcuts("pasteLastYank","Ctrl+Shift+Y","rstudio_bindings")
 }
 

@@ -51,7 +51,7 @@ hard_code_vector_code <- function(text = get_selected_text()){
 
 #' Add-in for viewing objects
 #'
-#' @description This add-in will \link[base:View]{view} the result of the current selected code. This could be either the name of an object or some code that when run will output an object.
+#' @description This add-in will \link[utils:View]{view} the result of the current selected code. This could be either the name of an object or some code that when run will output an object.
 #'
 #' @param text The currently selected R Code.
 #'
@@ -64,7 +64,7 @@ View_obj <- function(text = get_selected_text()){
     return(invisible(NULL))
   }else if(exists("selection")){
     View_title <- if(exists(text)) text else "fwdSlash_View"
-    View(eval(selection),title = View_title)
+    utils::View(eval(selection),title = View_title)
   }else{
     rstudioapi::showDialog("Failed",paste0("The selected text, ",text," cannot be coherced into an object."))
   }

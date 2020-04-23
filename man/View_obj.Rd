@@ -10,5 +10,5 @@ View_obj(text = get_selected_text())
 \item{text}{The currently selected R Code.}
 }
 \description{
-This add-in will \link[base:View]{view} the result of the current selected code. This could be either the name of an object or some code that when run will output an object.
+This add-in will \link[utils:View]{view} the result of the current selected code. This could be either the name of an object or some code that when run will output an object.
 }
