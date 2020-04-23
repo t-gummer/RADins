@@ -1,6 +1,6 @@
 # NOTE: ----
 # These add-ins will create code used to produce code vectors in R. They can be thought of a way of making hard-coded
-#   values
+#   values.
 
 # CODE: ----
 
@@ -42,9 +42,31 @@ hard_code_vector_code <- function(text = get_selected_text()){
 }
 
 #' @name vector_code_add-ins
-copy_r_eval <- function(text = get_selected_text()){
+  copy_r_eval <- function(text = get_selected_text()){
   parse(text = text) %>%
     eval %>%
     set_clipboard()
+}
+
+
+#' Add-in for viewing objects
+#'
+#' @description This add-in will \link[base:View]{view} the result of the current selected code. This could be either the name of an object or some code that when run will output an object.
+#'
+#' @param text The currently selected R Code.
+#'
+View_obj <- function(text = get_selected_text()){
+# Add-in for viewing the current selected object.
+  try(selection <- parse(text = text),silent = TRUE)
+  if(text == "" | stringr::str_detect(text,"View_obj\\(\\)")){
+    # If there is no selection, or the selection contains this function itself (which would cause infinite recursion)
+    #  there will be no return.
+    return(invisible(NULL))
+  }else if(exists("selection")){
+    View_title <- if(exists(text)) text else "fwdSlash_View"
+    View(eval(selection),title = View_title)
+  }else{
+    rstudioapi::showDialog("Failed",paste0("The selected text, ",text," cannot be coherced into an object."))
+  }
 }
 

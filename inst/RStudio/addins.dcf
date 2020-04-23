@@ -1,5 +1,5 @@
 Name: Set default keyboard shortcuts
-Description: Sets keyboard shortcuts for other add-ins to their defaults.
+Description: Sets keyboard shortcuts for the fwdSlash add-ins to their defaults.
 Binding: set_shortcuts_default
 Interactive: false
 
@@ -26,4 +26,29 @@ Interactive: false
 Name: Special copy (R evaluation)
 Description: Copies the output of evaluating selected code to the clipboard.
 Binding: copy_r_eval
+Interactive: false
+
+Name: Special copy (console output)
+Description: Copies the latest output to the console in a format based on object class to the cliboard.
+Binding: copy_console_output
+Interactive: false
+
+Name: Special paste (console output)
+Description: Pastes the latest output to the console in a format based on object class to the current cursor location.
+Binding: paste_console_output
+Interactive: false
+
+Name: Special copy (console input)
+Description: Copies the parsed code for the latest R call to the clipboard.
+Binding: copy_last_call
+Interactive: false
+
+Name: Special paste (console input)
+Description: Pastes the parsed code for the latest R call to the current cursor location.
+Binding: paste_last_call
+Interactive: false
+
+Name: View output
+Description: View the output of selected code (either code to create an object or the name of an object).
+Binding: View_obj
 Interactive: false

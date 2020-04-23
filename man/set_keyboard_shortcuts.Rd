@@ -6,7 +6,7 @@
 \alias{set_shortcuts_default}
 \title{Set keyboard shortcuts}
 \usage{
-set_shortcuts(addins, shortcuts)
+set_shortcuts(addins, shortcuts, file = "addins")
 
 set_shortcuts_default()
 }
@@ -14,7 +14,17 @@ set_shortcuts_default()
 \item{addins}{Characer vector of underlying functions for addins. Need to be in the right form (e.g. \code{"fwdSlash::copy_file_path"}).}
 
 \item{shortcuts}{Characer vector of keyboard shortcuts for addins. Need to be in the right form (e.g. \code{"Ctrl+Shift+V"}).}
+
+\item{file}{The name of the JSON file in the file path ``\code{~/.R/rstudio/keybindings/}'' you would like to change. This will be either "addins", "editor_bindings" or "rstudio_bindings" (partial matching permitted).}
 }
 \description{
 Manipulated the JSON file to make the suggested keyboard shortcuts. Need to close and re-open RStudio (or start a new session) for them to take effect.
+}
+\examples{
+\dontrun{
+#This is an example of changing shortcut thats helpful as it removed the pasteLastYank
+# as a shortcut that overwite Ctrl+Y for redo. This will fix frustrating default behaviour of RStudio
+set_shortcuts("pasteLastYank","Ctrl+Shift+Y","rstudio_bindings")
+}
+
 }
