@@ -14,7 +14,6 @@ get_call_history <- function(){
   if(exists('rawhist'))return(rawhist) else return(NULL)
 }
 
-get_call_history()
 #' Get the last call in the .Rhistory
 #'
 #' @description \link[base:parse]{Parses} the .Rhistory and gets the nth most recent call. Similar to \code{\link[base:Last.value]{.Last.value}} but for calls.
