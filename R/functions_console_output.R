@@ -1,18 +1,20 @@
 
+#utils::savehistory doesnt work for some reason
+
 #' Output the current \code{.Rhistory}
 #'
 #' @description This is a utility function written specifically for use in the \code{\link[fwdSlash]{.Last.call}()} function.
 #'
+#'
 get_call_history <- function(){
   f1 <- tempfile()
-  try(utils::savehistory(f1), silent = TRUE)
+  try(savehistory(f1), silent = TRUE)
   try(rawhist <- readLines(f1), silent = TRUE)
   unlink(f1)
   if(exists('rawhist'))return(rawhist) else return(NULL)
 }
 
-
-
+get_call_history()
 #' Get the last call in the .Rhistory
 #'
 #' @description \link[base:parse]{Parses} the .Rhistory and gets the nth most recent call. Similar to \code{\link[base:Last.value]{.Last.value}} but for calls.

@@ -63,8 +63,8 @@ table_content <- c("Set default keyboard shortcuts","`set_shortcuts_default()`",
                    "Set default keyboard shortcuts","`View_obj()`","`Shift+Alt+V`","View currently selected object (or code that will create an object) in the Viewer pane. This is a shortcut version of running the function `View()` or clicking on the object in the Environment pane.",
                    "Special copy (console output)","`copy_console_output()`","`Ctrl+Alt+2`","Copy current console output to the clipboard.",
                    "Special paste (console output)","`paste_console_output()`","`Ctrl+Alt+1`","Paste current console output to the current cursor position",
-                   "Special copy (console input)","`copy_last_call()`","`Shift+Alt+2`","Copy current R evaluation in the console to the clipboard. __Curently broken__",
-                   "Special paste (console input)","`paste_last_call()`","`Shift+Alt+1`","Paste current R evaluation in the console to the current cursor position. __Curently broken__"
+                   "Special copy (console input)","`copy_last_call()`","`Shift+Alt+2`","Copy current R evaluation in the console to the clipboard.",
+                   "Special paste (console input)","`paste_last_call()`","`Shift+Alt+1`","Paste current R evaluation in the console to the current cursor position."
                    )
 
     
