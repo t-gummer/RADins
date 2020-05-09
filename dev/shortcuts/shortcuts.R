@@ -12,7 +12,7 @@ library(tidyr)
 ## This HTML table was obtained by inspecting element on the Modify Keyboard
 #   shortcuts dialogue box in RStudio and copying the appropriate code.
 
-read_html("dev/shortcuts/shortcuts.html") %>%
+read_html("dev/shortcuts/shortcuts.txt") %>%
   html_table(fill = TRUE) -> RStudio_tbl
 
 RStudio_tbl[[1]] %>%
