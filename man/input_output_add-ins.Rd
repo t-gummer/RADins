@@ -19,7 +19,7 @@ copy_last_call(...)
 \arguments{
 \item{obj}{An R object, default to the output of the last command sent to the R console.}
 
-\item{...}{Arguments to pass to \code{\link[fwdSlash:dot-Last.call]{.Last.call()}}.}
+\item{...}{Arguments to pass to \code{\link[RADins:dot-Last.call]{.Last.call()}}.}
 }
 \description{
 Add-ins that copy/paste the output of the last R evaluation sent to the console. Some attempt is made to adjust the output based on the object. When in doubt, the default \link[utils:capture.output]{capture output} is used.

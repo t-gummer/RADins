@@ -11,7 +11,7 @@ set_shortcuts(addins, shortcuts, file = "addins")
 set_shortcuts_default()
 }
 \arguments{
-\item{addins}{Characer vector of underlying functions for addins. Need to be in the right form (e.g. \code{"fwdSlash::copy_file_path"}).}
+\item{addins}{Characer vector of underlying functions for addins. Need to be in the right form (e.g. \code{"RADins::copy_file_path"}).}
 
 \item{shortcuts}{Characer vector of keyboard shortcuts for addins. Need to be in the right form (e.g. \code{"Ctrl+Shift+V"}).}
 

@@ -7,5 +7,5 @@
 get_call_history()
 }
 \description{
-This is a utility function written specifically for use in the \code{\link[fwdSlash:dot-Last.call]{.Last.call()}} function.
+This is a utility function written specifically for use in the \code{\link[RADins:dot-Last.call]{.Last.call()}} function.
 }

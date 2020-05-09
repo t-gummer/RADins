@@ -21,5 +21,5 @@ The \code{read_selected_text()} function returns a character containing the acti
 \description{
 Utility functions for reading the current selected text and writing to the current cursor position respectively, by virtue of the \code{\link[rstudioapi:rstudio-documents]{rstudioapi}}.
 
-     These functions are used in the source code for add-ins in the \code{fwdSlash} package.
+     These functions are used in the source code for add-ins in the \code{RADins} package.
 }

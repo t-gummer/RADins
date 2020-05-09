@@ -21,7 +21,7 @@ The value of \code{set_clipboard()} is always \code{\link{NULL}} as it is used f
 \description{
 Utility functions to read and write to the system clipboard with checks.
 
-     These functions are used in the source code for add-ins in the \code{fwdSlash} package.
+     These functions are used in the source code for add-ins in the \code{RADins} package.
 }
 \details{
 These functions are essentially the \code{clipr} functions, \code{\link[clipr]{read_clip}} and \code{\link[clipr]{write_clip}} respectively with some additional checks

@@ -8,3 +8,7 @@
 The `dev` folder of this package is not included in the build of the R
 package. It is a place where the development of new ideas for the
 package can be explored.
+
+<!-- TO DO: -->
+
+<!-- add a description of how the JSON and HTML data were obtained. -->
