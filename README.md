@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-*`RAD`ical R add-`ins`\!*
+*`RAD`ical RStudio add-`ins`\!*
 
 This packages replaces the old
 [`fwdSlash`](https://github.com/t-gummer/fwdSlash) package.
