@@ -7,6 +7,9 @@
 
 <!-- badges: end -->
 
+<span style="color:red">**Note:** This package is soon to be renamed and
+will thensforth not be maintained.</span>
+
 ## Overview
 
 The `fwdSlash` package provides a number of add-ins that extend the
@@ -57,7 +60,7 @@ The `fwdSlash` package contains the following add-ins:
 |  Special paste (vector code)   |   `paste_vector_code()`   |       `Ctrl+H`       |                              Pastes the current text in the clipboard as R code for a hard-coded vector using the `c()` function (this does *not* change the clipboard).                               |
 |        Hard code vector        | `hard_code_vector_code()` |     `Ctrl+Alt+H`     |                                                         Evaluate the current selected code in RStudio and replace it with a hard-coded vector.                                                         |
 |  Special copy (R evaluation)   |      `copy_r_eval()`      |       `Ctrl+G`       |  Evaluate currently selected code in RStudio and copy the output to the clipboard (one line per element of vectors). This can be thought of as reversing the “*Special paste (vector code)*” add-in.   |
-| Set default keyboard shortcuts |       `View_obj()`        |    `Shift+Alt+V`     | View currently selected object (or code that will create an object) in the Viewer pane. This is a shortcut version of running the function `View()` or clicking on the object in the Environment pane. |
+| Set default keyboard shortcuts |       `view_obj()`        |    `Shift+Alt+V`     | View currently selected object (or code that will create an object) in the Viewer pane. This is a shortcut version of running the function `View()` or clicking on the object in the Environment pane. |
 | Special copy (console output)  |  `copy_console_output()`  |     `Ctrl+Alt+2`     |                                                                             Copy current console output to the clipboard.                                                                              |
 | Special paste (console output) | `paste_console_output()`  |     `Ctrl+Alt+1`     |                                                                      Paste current console output to the current cursor position                                                                       |
 |  Special copy (console input)  |    `copy_last_call()`     |    `Shift+Alt+2`     |                                                                       Copy current R evaluation in the console to the clipboard.                                                                       |
@@ -95,11 +98,41 @@ useful on these operating systems than Windows due to the fact that
 their file paths are generally do not require any modification to be
 recognised in R.
 
-## Similar packages
+## Similar packages in R
 
 There are a number of other packages that provide useful tools for
-accessing the keyboard. Some examples are listed below.
+accessing the clipboard. Some examples are listed below.
 
   - [`clipr`](https://www.r-pkg.org/pkg/clipr)
   - [`imageclipr`](https://github.com/Timag/imageclipr)
   - [`datapasta`](https://github.com/MilesMcBain/datapasta)
+
+## Other solutions to the “backslash problem”
+
+As mentioned [above](#Overview), the motivation for this package was to
+solve the problem of pasting windows file paths (which happen to include
+backslashes) into R. The package has evolved beyond that to include many
+more add-ins but this was the original intention. Below are some other
+ways of minimising this issue.
+
+The need to copy file paths into R can be minimised or entirely removed
+by making use of the following default infrastructure that already
+exists in R and RStudio:
+
+  - Using relative file paths (instead of absolute file path) prevents
+    the need to copy full file paths. In most situations, you should be
+    working with files in your [current working
+    directory](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd)
+    anyway. Some other languages such as SAS do not support relative
+    file paths, so some users may not be aware that they exist.
+  - RStudio has tab autocompletion for the relative file paths of files
+    in the current working directory if you hit tab after typing `"`.
+
+Additionally,
+[R 4.0.0](https://stat.ethz.ch/pipermail/r-announce/2020/000653.html)
+has rendered the initial idea behind this package somewhat redundant
+(although the package as a whole, still remains useful) by including new
+syntax for so-called *raw character constants* (`r"..."`). This addition
+now makes copying Windows file paths directly into R feasible as these
+raw character constants will not require you to escape backslashes with
+another backslash.
