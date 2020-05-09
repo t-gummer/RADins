@@ -7,8 +7,10 @@
 
 <!-- badges: end -->
 
-<span style="color:red">**Note:** This package is soon to be renamed and
-will thensforth not be maintained.</span>
+## Important notice
+
+**This package is soon to be renamed and will thensforth not be
+maintained.**
 
 ## Overview
 
