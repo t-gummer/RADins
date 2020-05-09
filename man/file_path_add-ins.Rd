@@ -11,7 +11,7 @@ copy_file_path(text = get_selected_text())
 paste_file_path(text = get_clipboard())
 }
 \arguments{
-\item{text}{Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.}
+\item{text}{Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:rstudio-editors]{current text selection} or a \link{character}.}
 }
 \description{
 Use these add-ins to copy/paste the clipboard to the current cursor location with some adjustments to change file paths.

@@ -1,7 +1,7 @@
 Package: fwdSlash
 Type: Package
 Title: Useful RStudio Add-ins for Pasting File Paths and More
-Version: 0.1.1
+Version: 0.2.0
 Author: person("Timothy", "Gummer", email = "timothy.gummer@gmail.com", role = c("aut", "cre"))
 Maintainer: Tim Gummer <timothy.gummer@gmail.com>
 Description: This package began as a solitary add-in that converted Windows file paths into add-in for which this package gets its name is useful for converting Windows file paths into something useable in R by replacing back slashes with forward slashes.
@@ -11,7 +11,7 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/t-gummer/fwdSlash
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5.0)
 Imports:
     stringr,
     magrittr,

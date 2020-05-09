@@ -14,7 +14,7 @@ hard_code_vector_code(text = get_selected_text())
 copy_r_eval(text = get_selected_text())
 }
 \arguments{
-\item{text}{Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.}
+\item{text}{Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:rstudio-editors]{current text selection} or a \link{character}.}
 }
 \description{
 Use \code{paste_vector_code()} to paste the clipboard to the current cursor location with a conversion to the R code for \link[base:c]{creating a vector}. Note that it does \strong{not} change the clipboard.

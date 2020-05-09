@@ -32,8 +32,8 @@ vectors.
 
 <!-- * An add-in to evaluate the code currenlty selected in RStudio and put the output into the clipboard. -->
 
-For more see `help("file_path_add-ins")` and
-`help("vector_code_add-ins")`. Note that the paste add-ins will not
+For more see `help("file_path_add-ins")`, `help("input_output_addins")`
+and `help("vector_code_add-ins")`. Note that the paste add-ins will not
 change the clipboard itself, they will simply insert text to the current
 location leaving the clipboard untouched.
 

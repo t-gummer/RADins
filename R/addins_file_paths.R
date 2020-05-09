@@ -14,7 +14,7 @@ if(getRversion() >= "2.15.1")  utils::globalVariables(c("View"))#utils::View doe
 #'
 #'      Note that they do \strong{not} change the clipboard.
 #'
-#' @param text Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.
+#' @param text Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:rstudio-editors]{current text selection} or a \link{character}.
 #'
 #'
 #' @note The word ``paste'' here is not to be confused with the base R \code{\link{paste}} function, which is for concatenation.

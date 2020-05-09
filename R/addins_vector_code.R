@@ -14,7 +14,7 @@
 #'
 #' \code{copy_r_eval()} is meant to do the reverse of \code{paste_vector_code()} by evaluating selected R code and copying the output to the clipboard. Note that this is done without sending the evaluation to the console.
 #'
-#' @param text Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:getActiveDocumentContext]{current text selection} or a \link{character}.
+#' @param text Either the \link[clipr:read_clip]{clipboard}, \link[rstudioapi:rstudio-editors]{current text selection} or a \link{character}.
 #'
 #' @note The word ``paste'' here is not to be confused with the base R \code{\link{paste}} function, which is for concatenation.
 #'
