@@ -18,7 +18,7 @@ The `RADins` package provides a number of add-ins that extend the
 capabilities of RStudio. The motivation for this package is an add-in
 that allows you to paste file paths into RStudio from a Windows machine.
 This will usually mean replacing backslashes (`\`) with forward slashes
-(`/`)—hence its former name,
+(`/`)—hence it’s former name,
 [`fwdSlash`](https://github.com/t-gummer/fwdSlash)—.
 
 The package also includes others add-ins that perform other special
