@@ -7,7 +7,7 @@
 #'
 #' @description Manipulated the JSON file to make the suggested keyboard shortcuts. Need to close and re-open RStudio (or start a new session) for them to take effect.
 #'
-#' @param addins Characer vector of underlying functions for addins. Need to be in the right form (e.g. \code{"fwdSlash::copy_file_path"}).
+#' @param addins Characer vector of underlying functions for addins. Need to be in the right form (e.g. \code{"RADins::copy_file_path"}).
 #' @param shortcuts Characer vector of keyboard shortcuts for addins. Need to be in the right form (e.g. \code{"Ctrl+Shift+V"}).
 #' @param file The name of the JSON file in the file path ``\code{~/.R/rstudio/keybindings/}'' you would like to change. This will be either "addins", "editor_bindings" or "rstudio_bindings" (partial matching permitted).
 #'
@@ -49,20 +49,20 @@ set_shortcuts <- function(addins, shortcuts, file = "addins"){
 
 #' @name set_keyboard_shortcuts
 set_shortcuts_default <- function(){
-  # pkg <- "fwdSlash"
+  # pkg <- "RADins"
   # addins <- c("copy_file_path","paste_file_path","paste_vector_code","hard_code_vector_code","copy_r_eval")
   # paste(pkg,addins,sep = "::")
   addins <- c(
-    "fwdSlash::copy_file_path",
-    "fwdSlash::paste_file_path",
-    "fwdSlash::paste_vector_code",
-    "fwdSlash::hard_code_vector_code",
-    "fwdSlash::copy_r_eval",
-    "fwdSlash::View_obj",
-    "fwdSlash::copy_console_output",
-    "fwdSlash::paste_console_output",
-    "fwdSlash::copy_last_call",
-    "fwdSlash::paste_last_call"
+    "RADins::copy_file_path",
+    "RADins::paste_file_path",
+    "RADins::paste_vector_code",
+    "RADins::hard_code_vector_code",
+    "RADins::copy_r_eval",
+    "RADins::View_obj",
+    "RADins::copy_console_output",
+    "RADins::paste_console_output",
+    "RADins::copy_last_call",
+    "RADins::paste_last_call"
 
     )
   shortcuts <- c(
@@ -78,7 +78,7 @@ set_shortcuts_default <- function(){
     "Shift+Alt+1"
     )
   set_shortcuts(addins,shortcuts,"addins")
-  rstudioapi::showDialog(title = "Shortcut change complete","RStudio shortcuts for <em>fwdSlash</em> add-ins were changed to their default values.<p><strong>Close and re-open R Studio for this to take effect.</strong></p>")
+  rstudioapi::showDialog(title = "Shortcut change complete","RStudio shortcuts for <em>RADins</em> add-ins were changed to their default values.<p><strong>Close and re-open R Studio for this to take effect.</strong></p>")
 }
 
 

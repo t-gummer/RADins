@@ -1,24 +1,21 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# fwdSlash
+# RADins
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-## Important notice
-
-**This package is soon to be renamed and will thensforth not be
-maintained.**
+*`RAD`ical R add-`ins`\!*
 
 ## Overview
 
-The `fwdSlash` package provides a number of add-ins that extend the
+The `RADins` package provides a number of add-ins that extend the
 capabilities of RStudio. The motivation for this package is an add-in
 that allows you to paste file paths into RStudio from a Windows machine.
-This will usually mean replacing backslashes (`\`) with forwardslashes
-(`/`)—hence the name `fwdSlash`—.
+This will usually mean replacing backslashes (`\`) with forward slashes
+(`/`)—hence the name `RADins`—.
 
 The package also includes others add-ins that perform other special
 copy/pastes, as well as some add-ins for working with hard-coded
@@ -28,9 +25,9 @@ vectors.
 
 <!-- * An add-in to paste the hard-code for a vector based on the current selection. -->
 
-<!-- * An add-in the evaluate the code currenlty selected in RStudio and replace it with a hard-coded vector. -->
+<!-- * An add-in the evaluate the code currently selected in RStudio and replace it with a hard-coded vector. -->
 
-<!-- * An add-in to evaluate the code currenlty selected in RStudio and put the output into the clipboard. -->
+<!-- * An add-in to evaluate the code currently selected in RStudio and put the output into the clipboard. -->
 
 For more see `help("file_path_add-ins")`, `help("input_output_addins")`
 and `help("vector_code_add-ins")`. Note that the paste add-ins will not
@@ -39,12 +36,12 @@ location leaving the clipboard untouched.
 
 ## Installation
 
-You can install the `fwdSlash` package from
-[GitHub](https://github.com/t-gummer/fwdSlash) with:
+You can install the `RADins` package from
+[GitHub](https://github.com/t-gummer/RADins) with:
 
 ``` r
 # install.packages("devtools")  #In case you have not installed it.
-devtools::install_github("t-gummer/fwdSlash")
+devtools::install_github("t-gummer/RADins")
 ```
 
 Once you have done this, the add-ins will be available in RStudio for
@@ -52,7 +49,7 @@ use in all future R sessions.
 
 ## Included Add-ins
 
-The `fwdSlash` package contains the following add-ins:
+The `RADins` package contains the following add-ins:
 
 |          Add-in Name           |   Underlying R Function   | Recommended Shortcut |                                                                                              Description                                                                                               |
 | :----------------------------: | :-----------------------: | :------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -71,11 +68,11 @@ The `fwdSlash` package contains the following add-ins:
 The decisions for the “recommended shortcuts” are based on both
 availability (they do not overwrite any of the existing default ones)
 and some attempt at logical conventions.
-<!-- Rationalise each choiceof shortcut below -->
+<!-- Rationalise each choice of shortcut below -->
 
 ## Workflow
 
-It is recommended that you set the fwdSlash `Special paste (file path)`
+It is recommended that you set the RADins `Special paste (file path)`
 add-in as a keyboard shortcut to allow for easy access. `Ctrl+Shift+V`
 is a good option for it’s similarity to `Ctrl+V`.
 
@@ -88,13 +85,13 @@ This workflow is much improved compared to the usual (slow) alternative,
 which is of doing a *find and replace* (or worse, manually replacing all
 the backslashes with forward slashes).
 
-<!-- There is a function in the fwdSlash package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
+<!-- There is a function in the RADins package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
 
-## Compatability
+## Compatibility
 
-`fwdSlash` was built for use on a Windows operating system.
+`RADins` was built for use on a Windows operating system.
 
-It also has the potential to work on Mac or Linux by vitue of the
+It also has the potential to work on Mac or Linux by virtue of the
 [`clipr`](https://www.r-pkg.org/pkg/clipr) package. It is however less
 useful on these operating systems than Windows due to the fact that
 their file paths are generally do not require any modification to be
@@ -127,7 +124,7 @@ exists in R and RStudio:
     directory](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd)
     anyway. Some other languages such as SAS do not support relative
     file paths, so some users may not be aware that they exist.
-  - RStudio has tab autocompletion for the relative file paths of files
+  - RStudio has tab auto-completion for the relative file paths of files
     in the current working directory if you hit tab after typing `"`.
 
 Additionally,

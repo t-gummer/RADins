@@ -1,6 +1,6 @@
 # NOTE: ----
 # The functions in this file are used to convert vectors into underlying R code that could be used to produce them
-#   — i.e. using the c() function —. They are exported in the fwdSlash package but could also be part of the add-ins.
+#   — i.e. using the c() function —. They are exported in the RADins package but could also be part of the add-ins.
 
 # CODE: ----
 #' @title Convert vector to R code for a vector

@@ -63,7 +63,7 @@ View_obj <- function(text = get_selected_text()){
     #  there will be no return.
     return(invisible(NULL))
   }else if(exists("selection")){
-    View_title <- if(exists(text)) text else "fwdSlash_View"
+    View_title <- if(exists(text)) text else "RADins_View"
     View(eval(selection),title = View_title)
   }else{
     rstudioapi::showDialog("Failed",paste0("The selected text, ",text," cannot be coherced into an object."))

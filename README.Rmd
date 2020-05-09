@@ -13,36 +13,35 @@ knitr::opts_chunk$set(
 )
 ```
 
-# fwdSlash
+# RADins
 
 <!-- badges: start -->
 <!-- badges: end -->
+*`RAD`ical R add-`ins`!*
 
-## Important notice
-
-__This package is soon to be renamed and will thensforth not be maintained.__
+This packages replaces the old [`fwdSlash`](https://github.com/t-gummer/fwdSlash) package.
 
 ## Overview
 
-The `fwdSlash` package provides a number of add-ins that extend the capabilities of RStudio. The motivation for this package is an add-in that allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forwardslashes (`/`)---hence the name `fwdSlash`---.
+The `RADins` package provides a number of add-ins that extend the capabilities of RStudio. The motivation for this package is an add-in that allows you to paste file paths into RStudio from a Windows machine. This will usually mean replacing backslashes (`\`) with forward slashes (`/`)---hence the name `RADins`---.
 
 The package also includes others add-ins that perform other special copy/pastes, as well as some add-ins for working with hard-coded vectors.
 
 <!-- * An add-in to copy a file path in R and convert it into a system (Windows) file path. -->
 <!-- * An add-in to paste the hard-code for a vector based on the current selection. -->
-<!-- * An add-in the evaluate the code currenlty selected in RStudio and replace it with a hard-coded vector. -->
-<!-- * An add-in to evaluate the code currenlty selected in RStudio and put the output into the clipboard. -->
+<!-- * An add-in the evaluate the code currently selected in RStudio and replace it with a hard-coded vector. -->
+<!-- * An add-in to evaluate the code currently selected in RStudio and put the output into the clipboard. -->
 
 For more see `help("file_path_add-ins")`, `help("input_output_addins")` and `help("vector_code_add-ins")`. Note that the paste add-ins will not change the clipboard itself, they will simply insert text to the current location leaving the clipboard untouched.
 
 
 ## Installation
 
-You can install the `fwdSlash` package from [GitHub](https://github.com/t-gummer/fwdSlash) with:
+You can install the `RADins` package from [GitHub](https://github.com/t-gummer/RADins) with:
 
 ``` r
 # install.packages("devtools")  #In case you have not installed it.
-devtools::install_github("t-gummer/fwdSlash")
+devtools::install_github("t-gummer/RADins")
 ```
 
 Once you have done this, the add-ins will be available in RStudio for use in all future R sessions.
@@ -51,7 +50,7 @@ Once you have done this, the add-ins will be available in RStudio for use in all
 ## Included Add-ins
 
 
-The `fwdSlash` package contains the following add-ins:
+The `RADins` package contains the following add-ins:
 
 ```{r, echo=FALSE, warning=FALSE}
 # install.packages("kableExtra")
@@ -80,11 +79,11 @@ table_content %>%
 ```
 
 The decisions for the "recommended shortcuts" are based on both availability (they do not overwrite any of the existing default ones) and some attempt at logical conventions.
-<!-- Rationalise each choiceof shortcut below -->
+<!-- Rationalise each choice of shortcut below -->
 
 ## Workflow
 
-It is recommended that you set the fwdSlash `Special paste (file path)` add-in as a keyboard shortcut to allow for easy access. `Ctrl+Shift+V` is a good option for it's similarity to `Ctrl+V`.
+It is recommended that you set the RADins `Special paste (file path)` add-in as a keyboard shortcut to allow for easy access. `Ctrl+Shift+V` is a good option for it's similarity to `Ctrl+V`.
 
 * [Keyboard Shortcuts](https://rstudio.github.io/rstudioaddins/#keyboard-shorcuts)
 * [Customizing Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/206382178-Customizing-Keyboard-Shortcuts)
@@ -92,13 +91,13 @@ It is recommended that you set the fwdSlash `Special paste (file path)` add-in a
 
 This workflow is much improved compared to the usual (slow) alternative, which is of doing a _find and replace_ (or worse, manually replacing all the backslashes with forward slashes).
 
-<!-- There is a function in the fwdSlash package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
+<!-- There is a function in the RADins package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
 
-## Compatability
+## Compatibility
 
-`fwdSlash` was built for use on a Windows operating system.
+`RADins` was built for use on a Windows operating system.
 
-It also has the potential to work on Mac or Linux by vitue of the [`clipr`](https://www.r-pkg.org/pkg/clipr) package. It is however less useful on these operating systems than Windows due to the fact that their file paths are generally do not require any modification to be recognised in R.
+It also has the potential to work on Mac or Linux by virtue of the [`clipr`](https://www.r-pkg.org/pkg/clipr) package. It is however less useful on these operating systems than Windows due to the fact that their file paths are generally do not require any modification to be recognised in R.
 
 ## Similar packages in R
 
@@ -115,7 +114,7 @@ As mentioned [above](#Overview), the motivation for this package was to solve th
 The need to copy file paths into R can be minimised or entirely removed by making use of the following default infrastructure that already exists in R and RStudio:
 
 * Using relative file paths (instead of absolute file path) prevents the need to copy full file paths. In most situations, you should be working with files in your [current working directory](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd) anyway. Some other languages such as SAS do not support relative file paths, so some users may not be aware that they exist.
-* RStudio has tab autocompletion for the relative file paths of files in the current working directory if you hit tab after typing `"`.
+* RStudio has tab auto-completion for the relative file paths of files in the current working directory if you hit tab after typing `"`.
 
 
 Additionally, [R 4.0.0](https://stat.ethz.ch/pipermail/r-announce/2020/000653.html) has rendered the initial idea behind this package somewhat redundant (although the package as a whole, still remains useful) by including new syntax for so-called _raw character constants_ (` r"..."`). This addition now makes copying Windows file paths directly into R feasible as these raw character constants will not require you to escape backslashes with another backslash.

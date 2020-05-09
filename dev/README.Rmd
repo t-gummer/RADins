@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# fwdSlash package development
+# RADins package development
 
 ## Purpose
 

@@ -1,5 +1,5 @@
 Name: Set default keyboard shortcuts
-Description: Sets keyboard shortcuts for the fwdSlash add-ins to their defaults.
+Description: Sets keyboard shortcuts for the RADins add-ins to their defaults.
 Binding: set_shortcuts_default
 Interactive: false
 

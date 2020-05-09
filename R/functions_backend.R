@@ -1,6 +1,6 @@
 # NOTE: ----
 # The functions in this file are for use in the source code for this package but are not exported.
-#   That is, they can only be accessed using fwdSlash:::func.
+#   That is, they can only be accessed using RADins:::func.
 
 # This is the file where the magrittr pipe operator (%>%) is imported but that it is also used heavily
 #   throughout pretty much all the scripts.
@@ -10,7 +10,7 @@
 #'
 #' @description Utility functions to read and write to the system clipboard with checks.
 #'
-#'      These functions are used in the source code for add-ins in the \code{fwdSlash} package.
+#'      These functions are used in the source code for add-ins in the \code{RADins} package.
 #'
 #' @param text A character vector, each element of which is a line of text to be written to the clipboard.
 #'
@@ -62,7 +62,7 @@ set_clipboard <- function(text){
 #' Read from/write to the current position in RStudio
 #' @description Utility functions for reading the current selected text and writing to the current cursor position respectively, by virtue of the \code{\link[rstudioapi:rstudio-documents]{rstudioapi}}.
 #'
-#'      These functions are used in the source code for add-ins in the \code{fwdSlash} package.
+#'      These functions are used in the source code for add-ins in the \code{RADins} package.
 #'
 #' @param text A character vector, each element of which is a line of text to be written to the current cursor position.
 #'
