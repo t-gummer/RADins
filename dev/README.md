@@ -12,3 +12,8 @@ package can be explored.
 <!-- TO DO: -->
 
 <!-- add a description of how the JSON and HTML data were obtained. -->
+
+## Shortcuts
+
+The shortcuts folder in this directory is for reverse engineering IDs
+for RStudio shortcuts.

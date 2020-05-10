@@ -21,3 +21,8 @@ The `dev` folder of this package is not included in the build of the R package. 
 
 <!-- TO DO: -->
 <!-- add a description of how the JSON and HTML data were obtained. -->
+
+
+## Shortcuts
+
+The shortcuts folder in this directory is for reverse engineering IDs for RStudio shortcuts.
