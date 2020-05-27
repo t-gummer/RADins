@@ -63,7 +63,7 @@ set_shortcuts_default <- function(){
     "RADins::paste_console_output",
     "RADins::copy_last_call",
     "RADins::paste_last_call",
-    "RADins:::bundle_code"
+    "RADins::bundle_code"
     )
   shortcuts <- c(
     "Ctrl+Alt+C",
