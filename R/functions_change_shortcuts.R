@@ -62,8 +62,8 @@ set_shortcuts_default <- function(){
     "RADins::copy_console_output",
     "RADins::paste_console_output",
     "RADins::copy_last_call",
-    "RADins::paste_last_call"
-
+    "RADins::paste_last_call",
+    "RADins:::bundle_code"
     )
   shortcuts <- c(
     "Ctrl+Alt+C",
@@ -75,12 +75,9 @@ set_shortcuts_default <- function(){
     "Ctrl+Alt+2",
     "Ctrl+Alt+1",
     "Shift+Alt+2",
-    "Shift+Alt+1"
+    "Shift+Alt+1",
+    "Ctrl+B"
     )
   set_shortcuts(addins,shortcuts,"addins")
   rstudioapi::showDialog(title = "Shortcut change complete","RStudio shortcuts for <em>RADins</em> add-ins were changed to their default values.<p><strong>Close and re-open R Studio for this to take effect.</strong></p>")
 }
-
-
-
-

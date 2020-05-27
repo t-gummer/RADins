@@ -7,6 +7,7 @@
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("."))
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("savehistory"))#utils::savehistory doesn't work for some readon
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("View"))#utils::View doesn't work for some readon
+if(getRversion() >= "2.15.1")  utils::globalVariables(c("file.edit"))
 
 #' Special paste slash add-ins
 #'

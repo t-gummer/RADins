@@ -68,6 +68,7 @@ The `RADins` package contains the following add-ins:
 | Special paste (console output) | `paste_console_output()`  |     `Ctrl+Alt+1`     |                                                                      Paste current console output to the current cursor position                                                                       |
 |  Special copy (console input)  |    `copy_last_call()`     |    `Shift+Alt+2`     |                                                                       Copy current R evaluation in the console to the clipboard.                                                                       |
 | Special paste (console input)  |    `paste_last_call()`    |    `Shift+Alt+1`     |                                                               Paste current R evaluation in the console to the current cursor position.                                                                |
+|          Bundle code           |      `bundle_code()`      |       `Ctrl+B`       |                                                                             Bundle the current selected text into a file.                                                                              |
 
 The decisions for the “recommended shortcuts” are based on both
 availability (they do not overwrite any of the existing default ones)

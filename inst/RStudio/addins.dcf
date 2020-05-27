@@ -53,3 +53,7 @@ Description: Pastes the parsed code for the latest R call to the current cursor 
 Binding: paste_last_call
 Interactive: false
 
+Name: Bundle selected code
+Description: Bundle selected code into a file.
+Binding: bundle_code
+Interactive: false
