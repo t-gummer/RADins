@@ -49,7 +49,8 @@ devtools::install_github("t-gummer/RADins")
 ```
 
 Once you have done this, the add-ins will be available in RStudio for
-use in all future R sessions.
+use in all future R sessions. Use the set “default keyboard shortcuts”
+to setup the default shortcuts for each add-in.
 
 ## Included Add-ins
 
@@ -63,7 +64,7 @@ The `RADins` package contains the following add-ins:
 |  Special paste (vector code)   |   `paste_vector_code()`   |       `Ctrl+H`       |                              Pastes the current text in the clipboard as R code for a hard-coded vector using the `c()` function (this does *not* change the clipboard).                               |
 |        Hard code vector        | `hard_code_vector_code()` |     `Ctrl+Alt+H`     |                                                         Evaluate the current selected code in RStudio and replace it with a hard-coded vector.                                                         |
 |  Special copy (R evaluation)   |      `copy_r_eval()`      |       `Ctrl+G`       |  Evaluate currently selected code in RStudio and copy the output to the clipboard (one line per element of vectors). This can be thought of as reversing the “*Special paste (vector code)*” add-in.   |
-| Set default keyboard shortcuts |       `view_obj()`        |    `Shift+Alt+V`     | View currently selected object (or code that will create an object) in the Viewer pane. This is a shortcut version of running the function `View()` or clicking on the object in the Environment pane. |
+|          View object           |       `view_obj()`        |    `Shift+Alt+V`     | View currently selected object (or code that will create an object) in the Viewer pane. This is a shortcut version of running the function `View()` or clicking on the object in the Environment pane. |
 | Special copy (console output)  |  `copy_console_output()`  |     `Ctrl+Alt+2`     |                                                                             Copy current console output to the clipboard.                                                                              |
 | Special paste (console output) | `paste_console_output()`  |     `Ctrl+Alt+1`     |                                                                      Paste current console output to the current cursor position                                                                       |
 |  Special copy (console input)  |    `copy_last_call()`     |    `Shift+Alt+2`     |                                                                       Copy current R evaluation in the console to the clipboard.                                                                       |
