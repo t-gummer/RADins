@@ -91,7 +91,9 @@ This workflow is much improved compared to the usual (slow) alternative,
 which is of doing a *find and replace* (or worse, manually replacing all
 the backslashes with forward slashes).
 
-![](img/pastePath2.gif)
+![](img/pastePath.gif)
+
+<!-- Make gif for more of the addins -->
 
 <!-- There is a function in the RADins package that allows you to easily change the RStudio keyboard shortcut _programmatically_ as an alternative to clicking through menus. -->
 
