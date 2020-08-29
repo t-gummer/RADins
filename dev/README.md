@@ -17,3 +17,10 @@ package can be explored.
 
 The shortcuts folder in this directory is for reverse engineering IDs
 for RStudio shortcuts.
+
+## To do
+
+  - Fix the `set keyboard shortcuts` Add-in
+  - Add a open file path Add-in that allows you to open the file/folder
+    in the current cursor position (use `file.edit()` for files and
+    somehow open the file explorer at that path for other paths).
