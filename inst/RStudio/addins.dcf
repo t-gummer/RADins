@@ -57,3 +57,8 @@ Name: Bundle selected code
 Description: Bundle selected code into a file.
 Binding: bundle_code
 Interactive: false
+
+Name: Equals sign code comment
+Description: Fill equals signs for code comments.
+Binding: fill_equals
+Interactive: false
